@@ -33,11 +33,7 @@ function toggle(source, name){
   }
 }
 
-function sleep(millis){
-  return new Promise(res => {setTimeout(()=>{res()}, millis)});
-}
-
-
+// normal version
 function choose(){
   // get list of all checked civilizations
   var cands = [];
@@ -49,7 +45,6 @@ function choose(){
   var civ = cands[Math.floor(Math.random()*cands.length)];
   document.getElementById('output').value = civ;
 }
-
 
 
 // run setup on page load

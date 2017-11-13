@@ -6,39 +6,37 @@
   <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 </head>
 
-<body>
+<body topmargin=20>
 
 <!--Selection checkboxes-->
 
-<p><strong>Selection by Expansion Pack</strong></p>
+<p><strong><center>Selection by Expansion Pack</center></strong></p>
 <table style="width:100%">
   <tr>
-    <td> <input type="checkbox" name="toggle" onclick="toggle(this, 'vanilla')" checked/> Vanilla </td>
-    <td> <input type="checkbox" name="toggle" onclick="toggle(this, 'conquerors')" checked/> The Conquerors </td>
-    <td> <input type="checkbox" name="toggle" onclick="toggle(this, 'forgotten')" checked/> The Forgotten </td>
+    <td> <input type="checkbox" name="toggle" id="vanilla" onclick="toggle(this, 'vanilla')" checked/> Vanilla </td>
+    <td> <input type="checkbox" name="toggle" id="conquerors" onclick="toggle(this, 'conquerors')" checked/> The Conquerors </td>
+    <td> <input type="checkbox" name="toggle" id="forgotten" onclick="toggle(this, 'forgotten')" checked/> The Forgotten </td>
   </tr>
   <tr>
-    <td> <input type="checkbox" name="toggle" onclick="toggle(this, 'kingdoms')" checked/> The African Kingdoms </td>
-    <td> <input type="checkbox" name="toggle" onclick="toggle(this, 'rajas')" checked/> Rise of the Rajas </td>
+    <td> <input type="checkbox" name="toggle" id="kingdoms" onclick="toggle(this, 'kingdoms')" checked/> The African Kingdoms </td>
+    <td> <input type="checkbox" name="toggle" id="rajas" onclick="toggle(this, 'rajas')" checked/> Rise of the Rajas </td>
   </tr>
 </table>
 
 
 
-<p><strong>Selection by Civilization</strong></p>
+<p><strong><center>Selection by Civilization</center></strong></p>
 <table style="width:100%" id="civ_table"></table>
 
 <!--Randomizer Interface-->
-<p> </p>
-<table style="width:200px" align="center">
+<div class="inter">
+<table style="width:200px" align="center" cellpadding="10">
   <tr>
-    <td width=40px><input type="image" id="selector" style="height:50px;width:50px;" src="img/dice.png" onclick="choose()"/></td>
-    <td width=100px pad=10px><input type="textbox" id="output" style="font-size:18pt;text-align:center"></input></td>
+    <td width=40px><input type="image" id="selector" style="height:50px;width:50px;" src="img/red-die.png" onclick="choose()"/></td>
+    <td width=100px><input type="textbox" class="textout" id="output" readonly></input></td>
   </tr>
 </table>
-
-
-
+</div>
 
 </body>
 </html>
