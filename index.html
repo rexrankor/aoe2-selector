@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<script src="js/source.js"></script>
+<body>
+
+<!--Selection checkboxes-->
+
+<p><strong>Selection by Expansion Pack</strong></p>
+<table style="width:100%">
+  <tr>
+    <td> <input type="checkbox" name="toggle" onclick="toggle(this, 'vanilla')" checked/> Vanilla </td>
+    <td> <input type="checkbox" name="toggle" onclick="toggle(this, 'conquerors')" checked/> The Conquerors </td>
+    <td> <input type="checkbox" name="toggle" onclick="toggle(this, 'forgotten')" checked/> The Forgotten </td>
+  </tr>
+  <tr>
+    <td> <input type="checkbox" name="toggle" onclick="toggle(this, 'kingdoms')" checked/> The African Kingdoms </td>
+    <td> <input type="checkbox" name="toggle" onclick="toggle(this, 'rajas')" checked/> Rise of the Rajas </td>
+  </tr>
+</table>
+
+
+
+<p><strong>Selection by Civilization</strong></p>
+<table style="width:100%" id="civ_table"></table>
+
+<!--Randomizer Interface-->
+<p></p>
+<input type="image" id="selector" style="height:40px;width:40px;" src="img/dice.png" onclick="choose()"/>
+<input type="textbox" id="output"></input>
+</body>
+</html>
