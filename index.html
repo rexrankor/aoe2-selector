@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
-<script src="js/source.js"></script>
+
+<head>
+  <script src="js/source.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+</head>
+
 <body>
 
 <!--Selection checkboxes-->
@@ -24,8 +29,16 @@
 <table style="width:100%" id="civ_table"></table>
 
 <!--Randomizer Interface-->
-<p></p>
-<input type="image" id="selector" style="height:40px;width:40px;" src="img/dice.png" onclick="choose()"/>
-<input type="textbox" id="output"></input>
+<p> </p>
+<table style="width:200px" align="center">
+  <tr>
+    <td width=40px><input type="image" id="selector" style="height:50px;width:50px;" src="img/dice.png" onclick="choose()"/></td>
+    <td width=100px pad=10px><input type="textbox" id="output" style="font-size:18pt;text-align:center"></input></td>
+  </tr>
+</table>
+
+
+
+
 </body>
 </html>

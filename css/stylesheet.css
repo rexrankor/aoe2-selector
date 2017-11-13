@@ -1,0 +1,23 @@
+body{
+  background-color: tan;
+  font-size: 18pt;
+  font-family: sans-serif;
+}
+
+table{
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th{
+  border: 1px solid #cccccc;
+  text-align: left;
+  background-color: #bbbbbb;
+}
+
+input[type="checkbox"]{
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
